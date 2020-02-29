@@ -6,6 +6,7 @@ import FetchDog from './components/FetchDog'
 import Home from './components/Home'
 import FetchCat from './components/FetchCat'
 import FetchMultipleDogs from './components/FetchMultipleDogs'
+import FetchMultipleCats from './components/FetchMultipleCats';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       </Route>
         <Route exact path={"/dog/random"} component={FetchDog}/>
         <Route path={"/dog/random/:num"} component={FetchMultipleDogs}/>
-        <Route path={"/cat/random"} component={FetchCat}/>
+        <Route exact path={"/cat/random"} component={FetchCat}/>
+        <Route path={"/cat/random/:num"} component={FetchMultipleCats}/>
     
       </Switch>
     </div>

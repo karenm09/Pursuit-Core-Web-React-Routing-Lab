@@ -10,6 +10,7 @@ class NavBar extends React.Component {
                 <NavLink exact to ={"/dog/random"} className="dog">Random Dog</NavLink>
                 <NavLink exact to ={"/dog/random/:num"} className="multipleDogs">Multiple Dogs</NavLink>
                 <NavLink exact to ={"/cat/random"} className={"cat"}>Random Cat</NavLink>
+                <NavLink exact to ={"/cat/random/:num"} className={"multipleCats"}>Multiple Cats</NavLink>
             </nav>
         )
     }
