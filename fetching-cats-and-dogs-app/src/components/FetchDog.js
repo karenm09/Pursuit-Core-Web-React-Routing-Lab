@@ -8,7 +8,7 @@ class FetchDog extends React.Component {
     getDog = async () => {
         try {
             let res = await axios.get(`https://dog.ceo/api/breeds/image/random`)
-            // debugger
+            debugger
             let dogPic = res.data.message
             this.setState({dog: dogPic})
         } catch(error) {

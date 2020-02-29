@@ -7,7 +7,7 @@ class FetchCat extends React.Component {
 
     getCat = async () => {
         try {
-            let res = await axios.get(`https://api.thecatapi.com/v1/images/search`)
+            let res = await axios.get(`https://api.thecatapi.com/v1/images/search?limit=6&page=1&order=Desc`)
             debugger
             let catPic = res.data[0].url
             this.setState({cat: catPic})
