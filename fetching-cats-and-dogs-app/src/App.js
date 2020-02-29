@@ -15,11 +15,8 @@ function App() {
       <Route exact path={"/"}>
         <Home/>
       </Route>
-        <Route path={"/dog/random"} component={FetchDog}>
-          <Route path={"/dog/random/:num"}> 
-          <FetchMultipleDogs/>
-          </Route>
-        </Route>
+        <Route exact path={"/dog/random"} component={FetchDog}/>
+        <Route path={"/dog/random/:num"} component={FetchMultipleDogs}/>
         <Route path={"/cat/random"} component={FetchCat}/>
     
       </Switch>

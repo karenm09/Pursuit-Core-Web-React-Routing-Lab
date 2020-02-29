@@ -20,15 +20,19 @@ nav {
 
 .home {
     position: absolute;
-    right: 11%;
+    right: 50%;
 }
 
 .dog {
     position: absolute;
-    right: 7%;
+    right: 35%;
 }
 
+.multipleDogs {
+    position: absolute;
+    right: 20%;
+}
 .cat {
     position: absolute;
-    right: 3%;
+    right: 10%;
 }
