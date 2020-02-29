@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import Dog from './Dog'
+import Animal from './Animal'
 
 class FetchDog extends React.Component {
     state = {dog: "" }
@@ -24,7 +24,8 @@ class FetchDog extends React.Component {
        
         return(
             <div>
-                <Dog img={displayDog}/>
+                <h2>Random Dog Image</h2>
+                <Animal img={displayDog}/>
                 <button onClick={this.getDog}>Get Dog</button>
             </div>
         )

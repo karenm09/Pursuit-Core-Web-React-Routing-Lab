@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/Dog.css'
+import '../css/Animal.css'
 
-const Dog = ({img}) => {
+const Animal = ({img}) => {
     return (
         <img src={img} alt={""}/>
     )
 }
 
 
-export default Dog;
+export default Animal;
